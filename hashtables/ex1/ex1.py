@@ -18,6 +18,7 @@ def get_indices_of_item_weights(weights, length, limit):
             answer = (i, get_weights)
             return answer
         else: 
+            # insert into the hash table if item is none
             hash_table_insert(ht, weights[i], i)
 
     return None
