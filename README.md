@@ -23,12 +23,24 @@ This sprint challenge is divided up into three parts:  Hash tables coding, block
 ## Interview Questions
 
 Explain in detail the workings of a dynamic array:
+
+A dynamic array is an array with auto resizing feature. One limitation of arrays is that they're fixed size, meaning you need to specify the number of elements your array will hold ahead of time. A dynamic array expands as you add more elements. So you don't need to determine the size ahead of time.
+
 * What is the runtime complexity to access an array, add or remove from the front, and add or remove from the back?
+
+O(1)
+
 * What is the worse case scenario if you try to extend the storage size of a dynamic array?
 
+O(n) because we also have to clone all items in previous array
+
 Explain how a blockchain is structured. What are the blocks, what is the chain? How is the data organized?
- 
+
+A blockchain contains ledgers linked together to form a chain, each ledger contains the hash of the previous ledger in the chain, its proof of work, timestamp and a list of transactions
+
 Explain how proof of work functions. How does it operate. How does this protect the chain from attack. What kind of attack is possible?
+
+It requires miners to solve computational problems, these problems are based on an underlying algorithm designed for the blockchain, when this problem is solved successfully the block is mined
 
 ## Project Set Up
 
